@@ -85,7 +85,9 @@ valid_words = load_words("words.txt")
 file = open("anagrams.txt", "w")
 
 # choose a word to create an anagram of below
-anagrams = anagram("coconut")
+word = input("What would you like to anagram? Anything greater than 8 letters will take a very long time."
+             " You will find the anagrams in anagram.txt after it runs.\n")
+anagrams = anagram(word)
 
 x = 0
 while x < len(anagrams):
